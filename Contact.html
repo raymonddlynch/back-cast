@@ -2,24 +2,59 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Contact</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   </head>
   <body>
-  <header>Contact Us</header>
-  <form action="https://formspree.io/f/xnqleege" method="post">
-  <label> First Name:
-    <input type="text" name="fname">
-  </label>
-  <label> Last Name:
-    <input type="text" name="lname">
-  </label>
-  <label > Email:
-    <input type="email" name="email">
-  </label>
-  <label> Your Message
-    <textarea name="Message" rows="8" cols="80"></textarea>
-  </label>
-  <button type="Submit">Send</button>
-  </form>
+
+      <div class="w-full rounded overflow-hidden shadow-lg">
+      <img class ="w-full" src="photo-trout.jpeg" alt="Trout photo">
+      <div class="px-6 py-4">
+          <div class="font-bold text xl mb-2">Get in Touch</div>
+          <p class="text-gray-700 text-base">
+            I would love to hear from you. Please use the form below to send a message!
+          </p>
+
+      </div>
+      <form class="bg-white shadow md rounded px-8 pt-6 pb-8 mb-4" action="https://formspree.io/f/xnqleege" method="post">
+      <div class="mb-4">
+      <label class="block text-gray-700 text sm font-bold mb-2" for="first name">
+        <input type="text"
+        name="fname"
+        class="shadow appearance-none border rounded w-full py-2 px-3"
+        placeholder="First Name">
+      </label>
+      </div>
+      <div class="mb-6">
+      <label class="block text-gray-700 text sm font-bold mb-2" for="last name">
+        <input type="text"
+        name="lname"
+        class="shadow appearance-none border rounded w-full py-2 px-3"
+        placeholder="Last Name"
+        >
+      </label>
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 text sm font-bold mb-2" for="email">
+          <input type="email"
+          name="email"
+          class="shadow appearance-none border rounded w-full py-2 px-3"
+          placeholder="Email">
+        </label>
+      </div>
+      <div class="mb-6">
+
+      <label class="block text-gray-700 text sm font-bold mb-2" for="message">
+        <textarea name="Message" rows=5 column=50 placeholder="Your Message here"  class="text-gray-700 shadow appearance-none border rounded w-full py-2 px-3"></textarea>
+
+      </label>
+      </div>
+      <br>
+      <button type="Submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send</button>
+      </form>
+
+      </div>
+
+
   </body>
 </html>
