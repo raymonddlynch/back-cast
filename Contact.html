@@ -6,7 +6,7 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="bg-yellow-300">
+    <nav class="bg-gray-300">
       <div class="max-w-6xl mx-auto">
           <div class="flex justify-between">
               <div class="flex">
@@ -21,7 +21,7 @@
                   <div class="flex items-center space-x-3">
                     <a href="about.html" class="py-4 px-3 text-blue-500">About</a>
                     <a href="blog.html" class="py-4 px-3 text-blue-500">Blog</a>
-                    <a href="reference.html" class="py-4 px-3 text-blue-500">References</a>
+                    <a href="reference.html" class="py-4 px-3 text-blue-500">Resources</a>
                   </div>
               </div>
 
@@ -33,15 +33,19 @@
               </div>
         </div>
     </nav>
-      <div class="w-full rounded overflow-hidden shadow-lg">
-      <img class ="w-full" src="photo-trout.jpeg" alt="Trout photo">
-      <div class="px-6 py-4">
-          <div class="font-bold text xl mb-2">Get in Touch</div>
-          <p class="text-gray-700 text-base">
-            I would love to hear from you. Please use the form below to send a message!
-          </p>
-
+      <!-- Photo centered -->
+      <div class="flex justify-center items-center py-6">
+        <img class ="rounded" src="photo-trout.jpeg" alt="Trout photo">
       </div>
+
+    <!-- Text explaining form -->
+        <div class="font-bold text-4xl mb-2 text-center p-4">
+            Get in Touch</div>
+        <div class="text-gray-700 text-base p-4 text-center">
+            I would love to hear from you. Please use the form below to send a message!
+          </div>
+
+    <!-- Form Section -->
       <form class="bg-white shadow md rounded px-8 pt-6 pb-8 mb-4" action="https://formspree.io/f/xnqleege" method="post">
       <div class="mb-4">
       <label class="block text-gray-700 text sm font-bold mb-2" for="first name">
@@ -71,7 +75,7 @@
       <div class="mb-6">
 
       <label class="block text-gray-700 text sm font-bold mb-2" for="message">
-        <textarea name="Message" rows=5 column=50 placeholder="Your Message here"  class="text-gray-700 shadow appearance-none border rounded w-full py-2 px-3"></textarea>
+        <textarea name="Message" rows=5 column=50 placeholder="Your Message Here"  class="text-gray-700 shadow appearance-none border rounded w-full py-2 px-3"></textarea>
 
       </label>
       </div>
